@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Google Search</title>
-
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body>
-  <p>Nothing to see here...</p>
-  
+<!-- <div class="links"> -->
   <ul>
-  <li><a href="images.html">Images</a></li>
-<li><a href="advance.html>"#Advanced Search></a></li>
-</ul>
+    <li>
+      <a href="images.html">IMAGES</a></li>
+    <li>
+      <a href="advanced.html">ADVANCED SEARCH</a></li>
+    </ul>
+<!-- </div> -->
 
   
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-  <!-- Project -->
-  <script src="main.js"></script>
+<div class="main-container">
+  <h1 id="google">G<span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></h1>
+<!-- Serach input form -->
+
+    <div class="form-container">
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="Search Google or type a URL">
+
+        <div class="searchbtn">
+        <input type="submit" value="Google Search">
+        <button type="submit">I'm Feeling Lucky</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+<script src="main.js"></script>

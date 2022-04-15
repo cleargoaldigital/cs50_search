@@ -1,3 +1,122 @@
-body {
-    font-size: 15pt;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-width: 400px;
+    display: block;
+    background: #fff;
 }
+
+body, input, button{
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 75%;
+    margin: auto 5px 20px auto;
+}
+
+li{
+    padding: 10px;
+}
+
+#google{
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0%;
+}
+
+h1, span:nth-of-type(3){
+    color: blue;
+}
+
+h1 > span {
+    color: red;
+}
+
+span:nth-of-type(2){
+    color: yellow;
+}
+
+span:nth-of-type(4){
+    color: green;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+}
+
+form > input{
+    padding: 25px;
+    margin: 10px;
+    width: 100%;
+    border-radius: 30px;
+    border-color: rgb(229, 229, 229) solid;
+    font-size: 1.4em;
+}
+
+.searchbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+}
+
+.searchbtn input, button{
+    border-radius: 7px;
+    padding: 22px;
+    margin: 20px 15px;
+    font-size: 1.2em;
+    background: rgb(229, 229, 229);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    border-color: aquamarine;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+    body, input, button, .searchbtn input {
+        font-size: .60em;
+    }
+
+    #google{
+        font-size: 1.5em;
+    }
+
+    .searchbtn{
+        margin-top: 3px;
+    }
+
+    form > input{
+        padding: .672em;
+    }
+
+    .searchbtn input, button{
+        padding: 1.7em;
+        margin: auto 5px;
+
+    }
+  }
