@@ -15,6 +15,7 @@ body, html{
    list-style-type: none;
    text-decoration: none;
    font-size: .864em;
+   color: #202124;
  }
 
  main{
@@ -52,6 +53,9 @@ form input:nth-child(2){
   margin: auto;
   padding: 7px;
   border: none;
+  background: blue;
+  color: #fff;
+  cursor: pointer;
 }
 
 form input:nth-child(2):hover{
