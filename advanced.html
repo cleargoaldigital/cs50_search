@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Google Advanced Search</title>
-  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="advanced.css">
 </head>
 
 <body>
 <header>
+  <h1>Advanced Search</h1>
   <ul>
     <li>
       <a href="index.html">Google Search</a>
@@ -19,12 +20,69 @@
 
 <main>
   <div class="search">
-    <h1>Advanced Search</h1>
+  <p>Find pages with...</p>
   <form action="https://www.google.com/advanced_search">
-    <input type="text" name="q">
+    <label for="all-words">all these words:</label>
+    <input type="text" name="q" id="all-words">
+
+    <label for="this-word">this exact word or phrase:</label>
+    <input type="text" name="q" id="this-word">
+
+    <label for="any-words">any of these words:</label>
+    <input type="text" name="q" id="any-words">
+
+    <label for="none-words">none of these words:</label>
+    <input type="text" name="q" id="none-words">
+
+    <label for="num-range">numbers ranging from:</label>
+    <input type="text" name="q" id="num-range">
+
+    <label for="to-num">to:</label>
+    <input type="text" name="q" id="to-num">
+
+    <p>Then narrow your results by...</p>
+
+    <label for="language">langauge:</label>
+    <select name="q">
+      <option value="langauge" selected>any langauge</option>
+      <option value="langauge">Afrikaans</option>
+      <option value="langauge">Arabic</option>
+      <option value="langauge">Armenian</option>
+      <option value="langauge">Belarusian</option>
+      <option value="langauge">Bulgarian</option>
+      <option value="langauge">Catalan</option>
+      <option value="langauge">Chinese (Simplified)</option>
+      <option value="langauge">Chinese (Traditional)</option>
+    </select>
+
+    <label for="region">region:</label>
+    <select name="q">
+    <option value="region" selected>any region</option>
+    <option value="region">Afghanistan</option>
+    <option value="region">Albania</option>
+    <option value="region">Algeria</option>
+    <option value="region">American Samoa</option>
+    <option value="region">Argentina</option>
+    <option value="region">Armenia</option>
+    <option value="region">Aruba</option>
+    <option value="region">Azerbaijan</option>
+    <option value="region">Bahamas</option>
+    <option value="region">Bahrain</option>
+    <option value="region">Bangladesh</option>
+    <option value="region">Barbados</option>
+    <option value="region">Belgium</option>
+    <option value="region">Belize</option>
+    <option value="region">Benin</option>
+    <option value="region">Bermuda</option>
+  </select>
+
+
+
+
     <input type="submit" value="Advanced Search">
   </form>
   </div>
+
 </main>
 
 </body>
