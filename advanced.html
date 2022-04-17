@@ -22,64 +22,91 @@
   <div class="search">
   <p>Find pages with...</p>
   <form action="https://www.google.com/advanced_search">
-    <label for="all-words">all these words:</label>
+
+    <div class="div">
+      <label for="all-words">all these words:</label>
     <input type="text" name="q" id="all-words">
+    </div>
 
-    <label for="this-word">this exact word or phrase:</label>
+    <div class="div">
+      <label for="this-word">this exact word or phrase:</label>
     <input type="text" name="q" id="this-word">
+    </div>
 
-    <label for="any-words">any of these words:</label>
+    <div class="div">
+      <label for="any-words">any of these words:</label>
     <input type="text" name="q" id="any-words">
+    </div>
 
-    <label for="none-words">none of these words:</label>
-    <input type="text" name="q" id="none-words">
+    <div class="div">
+      <label for="none-words">none of these words:</label>
+      <input type="text" name="q" id="none-words">
+    </div>
 
+   <div class="div from">
     <label for="num-range">numbers ranging from:</label>
     <input type="text" name="q" id="num-range">
+   </div>
 
+   <div class="div to">
     <label for="to-num">to:</label>
     <input type="text" name="q" id="to-num">
+   </div>
 
+   <div class="p">
     <p>Then narrow your results by...</p>
+   </div>
 
-    <label for="language">langauge:</label>
+    <div class="select">
+      <label for="region">region:</label>
     <select name="q">
-      <option value="langauge" selected>any langauge</option>
-      <option value="langauge">Afrikaans</option>
-      <option value="langauge">Arabic</option>
-      <option value="langauge">Armenian</option>
-      <option value="langauge">Belarusian</option>
-      <option value="langauge">Bulgarian</option>
-      <option value="langauge">Catalan</option>
-      <option value="langauge">Chinese (Simplified)</option>
-      <option value="langauge">Chinese (Traditional)</option>
-    </select>
-
-    <label for="region">region:</label>
-    <select name="q">
-    <option value="region" selected>any region</option>
-    <option value="region">Afghanistan</option>
-    <option value="region">Albania</option>
-    <option value="region">Algeria</option>
-    <option value="region">American Samoa</option>
-    <option value="region">Argentina</option>
-    <option value="region">Armenia</option>
-    <option value="region">Aruba</option>
-    <option value="region">Azerbaijan</option>
-    <option value="region">Bahamas</option>
-    <option value="region">Bahrain</option>
-    <option value="region">Bangladesh</option>
-    <option value="region">Barbados</option>
-    <option value="region">Belgium</option>
-    <option value="region">Belize</option>
-    <option value="region">Benin</option>
-    <option value="region">Bermuda</option>
+    <option name="region" value="" selected>any region</option>
+    <option name="region" value="afghanistan">Afghanistan</option>
+    <option name="region" value="albania">Albania</option>
+    <option name="region" value="algeria">Algeria</option>
+    <option name="region" value="american-samoa">American Samoa</option>
+    <option name="region" value="argentina">Argentina</option>
+    <option name="region" value="armenia">Armenia</option>
+    <option name="region" value="aruba">Aruba</option>
+    <option name="region" value="azerbaijan">Azerbaijan</option>
+    <option name="region" value="bahamas">Bahamas</option>
+    <option name="region" bahrain>Bahrain</option>
+    <option name="region" value="bangladesh">Bangladesh</option>
+    <option name="region" value="barbados">Barbados</option>
+    <option name="region" value="belgium">Belgium</option>
+    <option name="region" value="belize">Belize</option>
+    <option name="region" value="benin">Benin</option>
+    <option name="region" value="bermuda">Bermuda</option>
   </select>
+    </div>
+<div class="select">
+  <label for="region">region:</label>
+    <select name="q">
+    <option name="region" value="" selected>any region</option>
+    <option name="region" value="afghanistan">Afghanistan</option>
+    <option name="region" value="albania">Albania</option>
+    <option name="region" value="algeria">Algeria</option>
+    <option name="region" value="american-samoa">American Samoa</option>
+    <option name="region" value="argentina">Argentina</option>
+    <option name="region" value="armenia">Armenia</option>
+    <option name="region" value="aruba">Aruba</option>
+    <option name="region" value="azerbaijan">Azerbaijan</option>
+    <option name="region" value="bahamas">Bahamas</option>
+    <option name="region" bahrain>Bahrain</option>
+    <option name="region" value="bangladesh">Bangladesh</option>
+    <option name="region" value="barbados">Barbados</option>
+    <option name="region" value="belgium">Belgium</option>
+    <option name="region" value="belize">Belize</option>
+    <option name="region" value="benin">Benin</option>
+    <option name="region" value="bermuda">Bermuda</option>
+  </select>
+</div>
+    
 
 
 
 
-    <input type="submit" value="Advanced Search">
+    <button type="submit" value="Advanced Search" <a href="https://google.com/advanced_search-q">Advanced Search</a>
   </form>
   </div>
 
