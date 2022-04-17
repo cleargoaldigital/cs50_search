@@ -19,46 +19,30 @@
 </header>
 
 <main>
-  <div class="search">
   <p>Find pages with...</p>
   <form action="https://www.google.com/advanced_search">
 
-    <div class="div">
-      <label for="all-words">all these words:</label>
+    <label for="all-words">all these words:</label>
     <input type="text" name="q" id="all-words">
-    </div>
 
-    <div class="div">
-      <label for="this-word">this exact word or phrase:</label>
+    <label for="this-word">this exact word or phrase:</label>
     <input type="text" name="q" id="this-word">
-    </div>
 
-    <div class="div">
-      <label for="any-words">any of these words:</label>
+    <label for="any-words">any of these words:</label>
     <input type="text" name="q" id="any-words">
-    </div>
-
-    <div class="div">
-      <label for="none-words">none of these words:</label>
+  
+    <label for="none-words">none of these words:</label>
       <input type="text" name="q" id="none-words">
-    </div>
-
-   <div class="div from">
-    <label for="num-range">numbers ranging from:</label>
-    <input type="text" name="q" id="num-range">
-   </div>
-
-   <div class="div to">
-    <label for="to-num">to:</label>
-    <input type="text" name="q" id="to-num">
-   </div>
-
-   <div class="p">
+  
+    <label for="range" id="from">numbers ranging from:</label>
+    <input type="text" name="q" id="range">
+  
+    <label for="num" id="to">to:</label>
+    <input type="text" name="q" id="num">
+  
     <p>Then narrow your results by...</p>
-   </div>
-
-    <div class="select">
-      <label for="region">region:</label>
+  
+    <label for="region">region:</label>
     <select name="q">
     <option name="region" value="" selected>any region</option>
     <option name="region" value="afghanistan">Afghanistan</option>
@@ -78,8 +62,7 @@
     <option name="region" value="benin">Benin</option>
     <option name="region" value="bermuda">Bermuda</option>
   </select>
-    </div>
-<div class="select">
+
   <label for="region">region:</label>
     <select name="q">
     <option name="region" value="" selected>any region</option>
@@ -100,15 +83,10 @@
     <option name="region" value="benin">Benin</option>
     <option name="region" value="bermuda">Bermuda</option>
   </select>
-</div>
-    
 
-
-
-
-    <button type="submit" value="Advanced Search" <a href="https://google.com/advanced_search-q">Advanced Search</a>
+<button type="submit" value="Advanced Search" <a href="https://google.com/advanced_search-q">Advanced Search</a>
   </form>
-  </div>
+
 
 </main>
 
