@@ -20,7 +20,7 @@
 
 <main>
   <p>Find pages with...</p>
-  <form action="https://www.google.com/advanced_search">
+  <form action="https://www.google.com/search?as_q">
 
     <label for="all-words">all these words:</label>
     <input type="text" name="q" id="all-words">
@@ -42,25 +42,25 @@
   
     <p>Then narrow your results by...</p>
   
-    <label for="region">region:</label>
+    <label for="language">language:</label>
     <select name="q">
-    <option name="region" value="" selected>any region</option>
-    <option name="region" value="afghanistan">Afghanistan</option>
-    <option name="region" value="albania">Albania</option>
-    <option name="region" value="algeria">Algeria</option>
-    <option name="region" value="american-samoa">American Samoa</option>
-    <option name="region" value="argentina">Argentina</option>
-    <option name="region" value="armenia">Armenia</option>
-    <option name="region" value="aruba">Aruba</option>
-    <option name="region" value="azerbaijan">Azerbaijan</option>
-    <option name="region" value="bahamas">Bahamas</option>
-    <option name="region" bahrain>Bahrain</option>
-    <option name="region" value="bangladesh">Bangladesh</option>
-    <option name="region" value="barbados">Barbados</option>
-    <option name="region" value="belgium">Belgium</option>
-    <option name="region" value="belize">Belize</option>
-    <option name="region" value="benin">Benin</option>
-    <option name="region" value="bermuda">Bermuda</option>
+    <option name="language" value="" selected>any region</option>
+    <option name="language" value="afghanistan">Afghanistan</option>
+    <option name="language" value="albania">Albania</option>
+    <option name="language" value="algeria">Algeria</option>
+    <option name="language" value="american-samoa">American Samoa</option>
+    <option name="language" value="argentina">Argentina</option>
+    <option name="language" value="armenia">Armenia</option>
+    <option name="language" value="aruba">Aruba</option>
+    <option name="language" value="azerbaijan">Azerbaijan</option>
+    <option name="language" value="bahamas">Bahamas</option>
+    <option name="language" bahrain>Bahrain</option>
+    <option name="language" value="bangladesh">Bangladesh</option>
+    <option name="language" value="barbados">Barbados</option>
+    <option name="language" value="belgium">Belgium</option>
+    <option name="language" value="belize">Belize</option>
+    <option name="language" value="benin">Benin</option>
+    <option name="language" value="bermuda">Bermuda</option>
   </select>
 
   <label for="region">region:</label>
@@ -75,7 +75,7 @@
     <option name="region" value="aruba">Aruba</option>
     <option name="region" value="azerbaijan">Azerbaijan</option>
     <option name="region" value="bahamas">Bahamas</option>
-    <option name="region" bahrain>Bahrain</option>
+    <option name="region" value="bahrain">Bahrain</option>
     <option name="region" value="bangladesh">Bangladesh</option>
     <option name="region" value="barbados">Barbados</option>
     <option name="region" value="belgium">Belgium</option>
@@ -84,12 +84,61 @@
     <option name="region" value="bermuda">Bermuda</option>
   </select>
 
-<button type="submit" value="Advanced Search" <a href="https://google.com/advanced_search-q">Advanced Search</a>
+  <label for="update">last update:</label>
+    <select name="q">
+    <option name="update" value="" selected>anytime</option>
+    <option name="update" value="day">past 24 hours</option>
+    <option name="update" value="week">past week</option>
+    <option name="update" value="month">past month</option>
+    <option name="update" value="year">past year</option>
+    </select>
+
+    <label for="domain">site or domain:</label>
+    <input type="text" id="domain" name="q">
+    
+    <label for="update">terms appearing:</label>
+    <select name="q">
+    <option name="update" value="" selected>anywhere in the page</option>
+    <option name="update" value="title">in the title of the page</option>
+    <option name="update" value="text">in the text of the page</option>
+    <option name="update" value="url">in the URL of the page</option>
+    <option name="update" value="links">in the links to the page</option>
+    </select>
+
+    <label for="results">SafeSearch:</label>
+    <select name="q" id="results">
+    <option name="update" value="hide" selected>Hide explicit results</option>
+    <option name="update" value="show">Show explicit results</option>
+    </select>
+
+    <label for="file">file type</label>
+    <select type="file" id="file" name="q" />
+    <option name="file" value="any" selected>any format</option>
+    <option name="file" value="pdf">Adobe Acrobat PDF (.pdf)</option>
+    <option name="file" value="ps">Adobe Postscript (.ps)</option>
+    <option name="file" value="dwf">Autodesk DWF (.dwf)</option>
+    <option name="file" value="kmz">Google Earth KMZ (.kmz)</option>
+    <option name="file" value="ppt">Microsoft PowerPoint (.ppt)</option>
+    <option name="file" value="doc">Microsoft Word (.doc)</option>
+    <option name="file" value="rtf">Rich Text Format (.rtf)</option>
+    <option name="file" value="flash">Shockwave Flash (.swf)</option>  
+  </select>
+
+    <label for="usage">usage rights:</label>
+    <select name="q">
+    <option name="usage" value="licence" selected>not filtered by licence</option>
+    <option name="usage" value="day">free to use or share</option>
+    <option name="usage" value="week">free to use or share, even commercially</option>
+    <option name="usage" value="month">free to use, share or modify</option>
+    <option name="usage" value="year">free to use, share or modify, even commercially</option>
+    </select>
+
+<button type="submit" value="Advanced Search" <a href="https://google.com/advanced_search-q">Advanced Search</a></button>
   </form>
+
+  <p>You can also...</p>
 
 
 </main>
-
 </body>
-
 </html>

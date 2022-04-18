@@ -42,20 +42,20 @@ li a:hover{
 }
 
 main{
-   display: flex;
-   flex-direction: column;
+   display: block;
+   /* flex-direction: column;
    justify-content: center;
-   align-items: center;
+   align-items: center; */
    margin: 10px;
 }
 
 form{
-   width: 80%;
+   width: 70%;
    display: grid;
    grid-template-columns: (6, 1fr);
    gap: 15px;
-   padding: 1em .565em;
-   border: 2px solid #c1c1c1;
+   padding: .875em .565em;
+   /* border: 2px solid #c1c1c1; */
 }
 
 form p{
@@ -72,6 +72,11 @@ input, select{
    grid-column: 3 / 7;
    height: auto;
    border-radius: 5px;
+}
+
+select{
+   font-weight: bold;
+   background: rgb(236, 234, 234);
 }
 
 #from{
@@ -105,12 +110,23 @@ form button{
 }
 
 @media screen and (max-width: 425px) {
-   form, label, select{
-      display: block;
+   form{
+      width: 100%;
       margin: 5px;
    }
+   
+   form, label, select{
+      display: block;
+      /* margin: 5px; */
+   }
 
-   body{
+   body, form{
       font-size: 10pt;
+   }
+
+   form button{
+      width: auto;
+      margin: 5px auto;
+      display: flex;
    }
 }
