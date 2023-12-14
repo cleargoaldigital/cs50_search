@@ -3,32 +3,20 @@ body, html {
     padding: 0;
     background: #fff;
     font-size: 13pt;
-}
-
-body, input, button{
-    font-size: .876em;
     font-family: arial,sans-serif;
     color: #202124;
 }
 
-ul{
+nav{
     display: flex;
-    float: right;
-    margin: auto 5px 20px 0px;
-    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5px;
 }
 
-li{
-    list-style: none;
-}
-
-li a{
-	display: block;
+nav a{
 	color: #000;
-	text-align: center;
-	padding: 10px 8px;
-	text-decoration: none;
-	font-weight: bold;
+    padding: 5px;
 }
 
 a {
@@ -36,36 +24,38 @@ a {
     text-decoration: none;
 }
 
+nav img{
+    height: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
 .main-container{
-    display: block;
+    width: 80%;
+    margin: auto;
 }
 
 .container{
     margin: auto;
     width: 100%;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
 #google{
-    text-align: center;
-    font-size: 2.1em;
+    font-size: 1.5em;
     margin-bottom: auto;
 }
 
 h1, span:nth-of-type(3){
-    color: blue;
+    color: rgb(39, 39, 248);
 }
 
 h1 > span {
-    color: red;
+    color: rgb(236, 30, 30);
 }
 
 span:nth-of-type(2){
-    color: yellow;
+    color: rgb(240, 240, 43);
 }
 
 span:nth-of-type(4){
@@ -77,18 +67,15 @@ span:nth-of-type(4){
 }
 
 form{
-    padding: 10px;
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 
 form > input{
-    padding: 8px;
-    margin: auto auto 7px auto;
-    width: 80%;
+    padding: 6px;
+    width: 100%;
     border-radius: 30px;
-    border: 3px solid rgb(229, 229, 229);
-    font-size: .715em;
+    border: 2px solid rgb(229, 229, 229);
 }
 
 form > input:hover{
@@ -108,20 +95,32 @@ form > input:focus-within{
     margin: 5px;
 }
 
-.searchbtn input, button{
+.searchbtn input{
     border-radius: 5px;
-    padding: 7px;
+    padding: 6px;
     margin: 0px 5px;
-    width: auto;
     border: none;
     cursor: pointer;
 }
 
-button a{
-    font-size: inherit;
-    color: #202124;
+.searchbtn input:hover{
+    border: 2px solid rgb(229, 229, 229);
 }
 
-button:hover, .searchbtn input:hover{
-    border: 2px solid rgb(229, 229, 229);
+@media screen and (max-width: 350px){
+    .searchbtn{
+        display: block;
+    }
+    .searchbtn input{
+        margin: 4px auto;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
